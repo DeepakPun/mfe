@@ -1,14 +1,15 @@
 import React from 'react'
 import MarketingApp from './components/MarketingApp'
+import Header from './components/Header'
+import { BrowserRouter } from 'react-router-dom'
 
 export default () => {
   return (
-    <div>
-      <h1 style={{ textAlign: 'center', fontSize: '45px' }}>
-        Hi there! Cool!!!
-      </h1>
-      <hr />
-      <MarketingApp />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <MarketingApp />
+      </div>
+    </BrowserRouter>
   )
 }
